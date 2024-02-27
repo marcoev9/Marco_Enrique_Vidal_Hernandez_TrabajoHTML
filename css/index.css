@@ -1,0 +1,196 @@
+/* encabezado pagina ppal*/
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.logo a {
+  height: 150px;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* barra d enavegacion paso el mouse y cambia de color*/
+nav ul li a:hover {
+  color: #18c66a;
+  background-color: #cb30f1;
+  padding: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+main {
+  background-color: #c7c7c7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.producto {
+  width: calc(33.33% - 1rem);
+  margin-bottom: 2rem;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+.producto h2 {
+  margin-top: 1rem;
+}
+
+.producto p {
+  margin-top: 0.5rem;
+}
+
+.producto a {
+  display: block;
+  margin-top: 0.5rem;
+  background-color: #cb30f1;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+/* footer pie de pagina con redes sociales*/
+footer {
+  background-color: #5c5252;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.direccion,
+.aviso-legal {
+  margin-top: 70px;
+}
+
+i {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin: 1px;
+  border-radius: 50%;
+  padding: 2%;
+  box-shadow: 0px 5px 10px rgb(5, 5, 0.35);
+  transition: 1s ease;
+}
+.direccion {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5c5252;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #cccbcb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+/*redes sociales*/
+
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ebf4ed;
+  border-radius: 5px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #0ee5f0;
+}
+
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(14, 14, 14);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/*pagina de contacto*/
